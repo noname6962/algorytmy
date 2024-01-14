@@ -1,4 +1,4 @@
-import random
+import random_p_r
 
 odniesienia = []
 sloty = 0
