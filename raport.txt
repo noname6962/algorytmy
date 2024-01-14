@@ -1,94 +1,23 @@
-Simulation Report - FCFS Scheduling
+Simulation Report - opt page replacment
 
-Task: Arrival Time=2, Duration=8
-Start Time: 2
-End Time: 10
-Waiting Time: 0
-Turnaround Time: 8
-
-Task: Arrival Time=4, Duration=3
-Start Time: 10
-End Time: 13
-Waiting Time: 6
-Turnaround Time: 17
-
-Task: Arrival Time=4, Duration=21
-Start Time: 13
-End Time: 34
-Waiting Time: 15
-Turnaround Time: 53
-
-Task: Arrival Time=4, Duration=9
-Start Time: 34
-End Time: 43
-Waiting Time: 45
-Turnaround Time: 107
-
-Task: Arrival Time=5, Duration=3
-Start Time: 43
-End Time: 46
-Waiting Time: 83
-Turnaround Time: 193
-
-Task: Arrival Time=5, Duration=14
-Start Time: 46
-End Time: 60
-Waiting Time: 124
-Turnaround Time: 331
-
-Task: Arrival Time=5, Duration=28
-Start Time: 60
-End Time: 88
-Waiting Time: 179
-Turnaround Time: 538
-
-Task: Arrival Time=6, Duration=27
-Start Time: 88
-End Time: 115
-Waiting Time: 261
-Turnaround Time: 826
-
-Task: Arrival Time=6, Duration=14
-Start Time: 115
-End Time: 129
-Waiting Time: 370
-Turnaround Time: 1210
-
-Task: Arrival Time=7, Duration=21
-Start Time: 129
-End Time: 150
-Waiting Time: 492
-Turnaround Time: 1723
-
-Task: Arrival Time=7, Duration=20
-Start Time: 150
-End Time: 170
-Waiting Time: 635
-Turnaround Time: 2378
-
-Task: Arrival Time=7, Duration=8
-Start Time: 170
-End Time: 178
-Waiting Time: 798
-Turnaround Time: 3184
-
-Task: Arrival Time=7, Duration=4
-Start Time: 178
-End Time: 182
-Waiting Time: 969
-Turnaround Time: 4157
-
-Task: Arrival Time=8, Duration=15
-Start Time: 182
-End Time: 197
-Waiting Time: 1143
-Turnaround Time: 5315
-
-Task: Arrival Time=8, Duration=20
-Start Time: 197
-End Time: 217
-Waiting Time: 1332
-Turnaround Time: 6667
-
-Average Waiting Time: 88.80
-Average Turnaround Time: 444.47
+[5]
+[5, 6]
+[5, 6, 7]
+[4, 6, 7]
+[4, 8, 7]
+[4, 8, 10]
+[4, 8, 10]
+[9, 8, 10]
+[9, 1, 10]
+[9, 1, 4]
+[0, 1, 4]
+[0, 6, 4]
+[0, 6, 7]
+[9, 6, 7]
+[9, 3, 7]
+[9, 3, 4]
+[1, 3, 4]
+[1, 5, 4]
+[1, 5, 6]
+[10, 5, 6]
+Faults: 19
