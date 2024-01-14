@@ -1,13 +1,14 @@
-import random_p_r
+import random
 
-odniesienia = []
-sloty = 0
 
-for i in range(0, 20):
-    odniesienia.append(random.randint(0, 10))
+def page_generation():
+    odniesienia = []
 
-sloty = random.randint(1, 5)
+    for i in range(0, 20):
+        odniesienia.append(random.randint(0, 10))
 
-with open("dane_page.txt", "w") as output_file:
-    output_file.write(" ".join(map(str, odniesienia)) + "\n")
-    output_file.write(str(sloty))
+    sloty = random.randint(1, 5)
+
+    with open("dane_page.txt", "w") as output_file:
+        output_file.write(" ".join(map(str, odniesienia)) + "\n")
+        output_file.write(str(sloty))

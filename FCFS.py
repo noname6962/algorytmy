@@ -26,6 +26,10 @@ def fcfs_scheduling(arrival_times, durations):
 
         report_file.write("Average Waiting Time: {:.2f}\n".format(average_waiting_time))
         report_file.write("Average Turnaround Time: {:.2f}\n".format(average_turnaround_time))
+        report_file.write(f"Turnaround Time: {current_time}\n\n")
+
+    return average_waiting_time, average_turnaround_time, current_time
+
 
 if __name__ == "__main__":
     # Read input from the file

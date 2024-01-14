@@ -1,4 +1,4 @@
-import random_p_r
+import random
 
 przybycie = []
 trwanie = []

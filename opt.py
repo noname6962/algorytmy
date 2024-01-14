@@ -9,7 +9,7 @@ def przewidzenie(odniesienia, check, i, slots):
                 break
     return wizja.index(max(wizja))
 
-def faults(odniesienia, sloty):
+def faults_opt(odniesienia, slots):
     check = []
     faults = 0
 
@@ -21,7 +21,7 @@ def faults(odniesienia, sloty):
                 report_file.write(f"{check}\n")
                 continue
             else:
-                if len(check) < sloty:
+                if len(check) < slots:
                     check.append(odniesienia[i])
                     faults = faults + 1
                 else:
@@ -30,6 +30,7 @@ def faults(odniesienia, sloty):
 
             report_file.write(f"{check}\n")
         report_file.write(f"Faults: {faults}")
+    return faults
 
 
 
@@ -40,5 +41,5 @@ if __name__ == '__main__':
         odniesienia = list(map(int, input_file.readline().split()))
         slots = int(input_file.readline())
 
-    faults(odniesienia, slots)
+    faults_opt(odniesienia, slots)
 
