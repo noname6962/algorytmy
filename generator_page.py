@@ -4,7 +4,8 @@ import random
 def page_generation():
     odniesienia = []
 
-    for i in range(0, 20):
+    x = random.randint(20, 100)
+    for i in range(0, x):
         odniesienia.append(random.randint(0, 10))
 
     sloty = random.randint(1, 5)
@@ -12,3 +13,7 @@ def page_generation():
     with open("dane_page.txt", "w") as output_file:
         output_file.write(" ".join(map(str, odniesienia)) + "\n")
         output_file.write(str(sloty))
+
+
+if __name__ == '__main__':
+    page_generation()

@@ -11,6 +11,7 @@ def przewidzenie(odniesienia, check, i, slots):
 
 def faults_opt(odniesienia, slots):
     check = []
+    hit = 0
     faults = 0
 
     with open("raport.txt", "w") as report_file:
@@ -19,6 +20,7 @@ def faults_opt(odniesienia, slots):
         for i in range(len(odniesienia)):
             if odniesienia[i] in check:
                 report_file.write(f"{check}\n")
+                hit = hit + 1
                 continue
             else:
                 if len(check) < slots:
@@ -30,7 +32,7 @@ def faults_opt(odniesienia, slots):
 
             report_file.write(f"{check}\n")
         report_file.write(f"Faults: {faults}")
-    return faults
+    return faults, hit
 
 
 
