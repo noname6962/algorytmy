@@ -1,0 +1,8 @@
+porownanie wynikow dla 100 000 powtorzen
+
+sredni czas oczekiwania FCFS 272.04602143803 
+sredni czas wykonania FCFS 282.54531587556335 
+sredni czas oczekiwania RR 275.8742727703408 
+sredni czas oczekiwania RR 286.37356720787506 
+sredni czas oczekiwania SJF 182.49249997562717 
+sredni czas oczekiwania SJF 192.99179441316213 

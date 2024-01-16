@@ -3,6 +3,8 @@ def faults_lru(odniesienia, sloty):
     far_check = [0] * sloty
     hit = 0
     faults = 0
+    x = -1
+
     with open("raport.txt", "w") as report_file:
         report_file.write("Simulation Report - opt page replacment\n\n")
 
@@ -13,7 +15,8 @@ def faults_lru(odniesienia, sloty):
                 for j in range(len(check)):
                     if j != check.index(odniesienia[i]):
                         far_check[j] = far_check[j] + 1
-                report_file.write(f"{check}\n")
+                report_file.write(f"{check}    hit\n")
+                continue
             else:
                 if len(check) < sloty:
                     check.append(odniesienia[i])
@@ -21,6 +24,7 @@ def faults_lru(odniesienia, sloty):
                     for j in range(len(check)):
                         if j != check.index(odniesienia[i]):
                             far_check[j] = far_check[j] + 1
+                    x = x + 1
                 else:
                     zastapienie = far_check.index(max(far_check))
                     check[zastapienie] = odniesienia[i]
@@ -30,8 +34,9 @@ def faults_lru(odniesienia, sloty):
                             far_check[j] = far_check[j] + 1
 
                     faults = faults + 1
+                    x= zastapienie
 
-            report_file.write(f"{check}\n")
+            report_file.write(f"{check}    zamiana na slocie {x}\n")
         report_file.write(f"Faults: {faults}")
     return faults, hit
 if __name__ == '__main__':

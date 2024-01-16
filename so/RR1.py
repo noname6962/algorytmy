@@ -1,15 +1,15 @@
-def aging(arrival_times, priorities, time_quant_aging, total_tasks, compleated_tasks, current_time, last_aging):
+def aging(arrival_times, priorities, time_quant_aging, compleated_tasks, current_time, last_aging):
     if current_time - last_aging >= time_quant_aging:
         time_of_aging = current_time
-        for i in range(total_tasks):
+        for i in range(len(priorities)):
             if i not in compleated_tasks:
                 if arrival_times[i] <= time_of_aging:
                     priorities[i] = priorities[i] - 1
 
 
-def que(arrival_times, priorities, total_tasks, ready_queue, current_time, compleated_tasks, current_priority, working_task):
+def que(arrival_times, priorities, ready_queue, current_time, compleated_tasks, current_priority, working_task):
     to_do = []
-    for i in range(total_tasks):
+    for i in range(len(priorities)):
         if i not in compleated_tasks:
             if arrival_times[i] <= current_time:
                 to_do.append(i)
@@ -24,7 +24,7 @@ def que(arrival_times, priorities, total_tasks, ready_queue, current_time, compl
             else:
                 continue
 
-    for i in range(total_tasks):
+    for i in range(len(priorities)):
         if i not in compleated_tasks:
             if i not in ready_queue:
                 if arrival_times[i] <= current_time:
@@ -33,16 +33,27 @@ def que(arrival_times, priorities, total_tasks, ready_queue, current_time, compl
 
 
 
-def round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr, total_tasks, waiting_time, turnaround_time, og_durations, ready_queue, compleated_tasks, current_time, current_priority, working_task, last_aging):
+def round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr):
+    waiting_time = [0] * len(arrival_times)
+    turnaround_time = [0] * len(arrival_times)
+    og_durations = list(durations)
+    ready_queue = []
+    compleated_tasks = []
+
+    current_time = min(arrival_times)
+    current_priority = priorities[0]
+    working_task = 0
+    last_aging = 0
+
     with open("raport.txt", "w") as report_file:
         report_file.write("Simulation Report - Round Robin Priority Scheduling with Aging\n\n")
 
-        while len(compleated_tasks) < total_tasks:
+        while len(compleated_tasks) < len(arrival_times):
 
-            que(arrival_times, priorities, total_tasks, ready_queue, current_time, compleated_tasks, current_priority, working_task)
+            que(arrival_times, priorities, ready_queue, current_time, compleated_tasks, current_priority, working_task)
 
             if not ready_queue:
-                break
+                current_time += 1
             else:
                 durations[ready_queue[working_task]] = durations[ready_queue[working_task]] - time_quantum_rr
 
@@ -71,13 +82,14 @@ def round_robin_priority_scheduling(arrival_times, durations, priorities, time_q
             if working_task >= len(ready_queue):
                 working_task = 0
 
-            aging(arrival_times, priorities, time_quant_aging, total_tasks, compleated_tasks, current_time, last_aging)
+            aging(arrival_times, priorities, time_quant_aging, compleated_tasks, current_time, last_aging)
 
         average_waiting_time = sum(waiting_time) / len(arrival_times)
         average_turnaround_time = sum(turnaround_time) / len(arrival_times)
 
         report_file.write("Average Waiting Time: {:.2f}\n".format(average_waiting_time))
         report_file.write("Average Turnaround Time: {:.2f}\n".format(average_turnaround_time))
+    return average_waiting_time, average_turnaround_time
 
 
 with open("dane.txt", "r") as input_file:
@@ -87,19 +99,7 @@ with open("dane.txt", "r") as input_file:
     time_quant_aging = int(input_file.readline())
     time_quantum_rr = int(input_file.readline())
 
-
-total_tasks = len(arrival_times)
-waiting_time = [0] * total_tasks
-turnaround_time = [0] * total_tasks
-og_durations = list(durations)
-ready_queue = []
-compleated_tasks = []
-
-current_time = min(arrival_times)
-current_priority = priorities[0]
-working_task = 0
-last_aging = 0
 # Run Round Robin Priority scheduling algorithm
-round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr, total_tasks, waiting_time, turnaround_time, og_durations, ready_queue, compleated_tasks, current_time, current_priority, working_task, last_aging)
+round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr)
 
 print("Simulation report generated in 'raport.txt'")

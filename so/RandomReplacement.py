@@ -1,41 +1,33 @@
-def przewidzenie(odniesienia, check, i, slots):
-    wizja = [0] * slots
+import random
 
-    for j in range(slots):
-        for k in range(i+1, len(odniesienia)):
-            if odniesienia[k] != check[j]:
-                wizja[j] = wizja[j] + 1
-            else:
-                break
-    return wizja.index(max(wizja))
 
-def faults_opt(odniesienia, slots):
+def faults_random_replacment(odniesienia, sloty):
     check = []
-    hit = 0
     faults = 0
+    hit = 0
+    x=-1
 
     with open("raport.txt", "w") as report_file:
         report_file.write("Simulation Report - opt page replacment\n\n")
 
         for i in range(len(odniesienia)):
             if odniesienia[i] in check:
-                report_file.write(f"{check}\n")
                 hit = hit + 1
+                report_file.write(f"{check}   hit\n")
                 continue
             else:
-                if len(check) < slots:
+                if len(check) < sloty:
                     check.append(odniesienia[i])
                     faults = faults + 1
+                    x = x +1
                 else:
-                    check[przewidzenie(odniesienia, check, i, slots)] = odniesienia[i]
+                    x = random.randint(0, sloty-1)
+                    check[x] = odniesienia[i]
                     faults = faults + 1
 
-            report_file.write(f"{check}\n")
+            report_file.write(f"{check}   zamiana na slocie {x} \n")
         report_file.write(f"Faults: {faults}")
     return faults, hit
-
-
-
 
 
 if __name__ == '__main__':
@@ -43,5 +35,4 @@ if __name__ == '__main__':
         odniesienia = list(map(int, input_file.readline().split()))
         slots = int(input_file.readline())
 
-    faults_opt(odniesienia, slots)
-
+    faults_random_replacment(odniesienia, slots)
