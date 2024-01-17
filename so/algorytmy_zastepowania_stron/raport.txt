@@ -1,0 +1,27 @@
+Simulation Report - fifo page replacment
+
+[2]    zamiana na slocie 1
+[2, 10]    zamiana na slocie 2
+[2, 10, 5]    zamiana na slocie 5
+[4, 10, 5]    zamiana na slocie 1
+[4, 10, 5]    hit
+[4, 0, 5]    zamiana na slocie 2
+[4, 0, 3]    zamiana na slocie 5
+[10, 0, 3]    zamiana na slocie 1
+[10, 2, 3]    zamiana na slocie 2
+[10, 2, 5]    zamiana na slocie 5
+[9, 2, 5]    zamiana na slocie 1
+[9, 0, 5]    zamiana na slocie 2
+[9, 0, 5]    hit
+[9, 0, 1]    zamiana na slocie 5
+[9, 0, 1]    hit
+[3, 0, 1]    zamiana na slocie 1
+[3, 9, 1]    zamiana na slocie 2
+[3, 9, 2]    zamiana na slocie 5
+[4, 9, 2]    zamiana na slocie 1
+[4, 9, 2]    hit
+[4, 9, 2]    hit
+[4, 0, 2]    zamiana na slocie 2
+[4, 0, 6]    zamiana na slocie 5
+[4, 0, 6]    hit
+Faults: 18

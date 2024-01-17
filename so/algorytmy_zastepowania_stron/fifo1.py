@@ -3,7 +3,7 @@ def faults_fifo(odniesienia, sloty):
     faults = 0
     hit = 0
     x = 0
-    with open("../algorytmy_planowania/raport.txt", "w") as report_file:
+    with open("raport.txt", "w") as report_file:
         report_file.write("Simulation Report - fifo page replacment\n\n")
 
         for i in range(len(odniesienia)):

@@ -1,5 +1,5 @@
 from so.algorytmy_planowania.FCFS import fcfs_scheduling
-from so.algorytmy_zastepowania_stron.sjf import sjf_scheduling
+from so.algorytmy_planowania.sjf import sjf_scheduling
 from so.algorytmy_planowania.RR1 import round_robin_priority_scheduling
 from so.algorytmy_planowania.generator import generate
 
