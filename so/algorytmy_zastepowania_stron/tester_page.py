@@ -1,4 +1,4 @@
-from opt import faults_opt
+from so.algorytmy_planowania.opt import faults_opt
 from lru import faults_lru
 from RandomReplacement import faults_random_replacment
 from fifo1 import faults_fifo

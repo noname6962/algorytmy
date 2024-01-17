@@ -42,7 +42,7 @@ def faults_opt(odniesienia, slots):
 
 
 if __name__ == '__main__':
-    with open("dane_page.txt", "r") as input_file:
+    with open("../algorytmy_zastepowania_stron/dane_page.txt", "r") as input_file:
         odniesienia = list(map(int, input_file.readline().split()))
         slots = int(input_file.readline())
 

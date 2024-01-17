@@ -10,7 +10,7 @@ def page_generation():
 
     sloty = random.randint(2, 5)
 
-    with open("../algorytmy_zastepowania_stron/dane_page.txt", "w") as output_file:
+    with open("dane_page.txt", "w") as output_file:
         output_file.write(" ".join(map(str, odniesienia)) + "\n")
         output_file.write(str(sloty))
 
