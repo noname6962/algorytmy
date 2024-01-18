@@ -11,6 +11,7 @@ faults_opt_value, faults_lru_value, faults_random_replacment_value, faults_fifo_
 hit_opt, hit_lru, hit_random_replacment, hit_fifo = 0, 0, 0, 0
 
 for i in range(100000):
+    print(i)
     page_generation()
 
     input_file = open("dane_page.txt", "r")
@@ -35,18 +36,16 @@ for i in range(100000):
 
 with open("raport_page_100k.txt", "w") as report_file:
     report_file.write("porownanie wynikow dla 100 000 powtorzen\n\n")
-    report_file.write(f"total sum of faults for opt {sum(faults_list_opt)}\n")
-    report_file.write(f"total sum of hits for opt {sum(hit_list_opt)}\n")
+
     report_file.write(f"average faults for opt {sum(faults_list_opt) / len(faults_list_opt)}\n")
     report_file.write(f"hit to faults ratio for opt {sum(hit_list_opt) / sum(faults_list_opt)}\n")
-    report_file.write(f"total sum of faults for lru {sum(faults_list_lru)}\n")
-    report_file.write(f"total sum of hits for lru {sum(hit_list_lru)}\n")
+
     report_file.write(f"average faults for lru {sum(faults_list_lru) / len(faults_list_lru)}\n")
     report_file.write(f"hit to faults ratio for lru {sum(hit_list_lru) / sum(faults_list_lru)}\n")
-    report_file.write(f"total sum of faults for opt {sum(faults_list_fifo)}\n")
-    report_file.write(f"total sum of hits for opt {sum(hit_list_fifo)}\n")
+
     report_file.write(f"average faults for fifo {sum(faults_list_fifo) / len(faults_list_fifo)}\n")
     report_file.write(f"hit to faults ratio for fifo {sum(hit_list_fifo) / sum(faults_list_fifo)}\n")
+
     report_file.write(f"average faults for random replacment {sum(faults_list_random_replacment) / len(faults_list_random_replacment)}\n")
     report_file.write(f"hit to faults ratio for random replacment {sum(hit_list_random_replacment) / sum(faults_list_random_replacment)}\n")
 

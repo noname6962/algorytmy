@@ -7,7 +7,7 @@ def generate():
     kwant = 0
     kwant1 = 0
 
-    for i in range(0, random.randint(15,100)):
+    for i in range(0, random.randint(15,15)):
             przybycie.append(random.randint(0, 50))
             trwanie.append(random.randint(1, 20))
             priorytet.append(random.randint(1, 10))

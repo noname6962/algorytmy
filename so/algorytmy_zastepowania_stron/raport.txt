@@ -1,27 +1,52 @@
-Simulation Report - fifo page replacment
+Simulation Report - RandomReplacment page replacment
 
-[2]    zamiana na slocie 1
-[2, 10]    zamiana na slocie 2
-[2, 10, 5]    zamiana na slocie 5
-[4, 10, 5]    zamiana na slocie 1
-[4, 10, 5]    hit
-[4, 0, 5]    zamiana na slocie 2
-[4, 0, 3]    zamiana na slocie 5
-[10, 0, 3]    zamiana na slocie 1
-[10, 2, 3]    zamiana na slocie 2
-[10, 2, 5]    zamiana na slocie 5
-[9, 2, 5]    zamiana na slocie 1
-[9, 0, 5]    zamiana na slocie 2
-[9, 0, 5]    hit
-[9, 0, 1]    zamiana na slocie 5
-[9, 0, 1]    hit
-[3, 0, 1]    zamiana na slocie 1
-[3, 9, 1]    zamiana na slocie 2
-[3, 9, 2]    zamiana na slocie 5
-[4, 9, 2]    zamiana na slocie 1
-[4, 9, 2]    hit
-[4, 9, 2]    hit
-[4, 0, 2]    zamiana na slocie 2
-[4, 0, 6]    zamiana na slocie 5
-[4, 0, 6]    hit
-Faults: 18
+[8]   zamiana na slocie 0 
+[8, 5]   zamiana na slocie 1 
+[4, 5]   zamiana na slocie 0 
+[10, 5]   zamiana na slocie 0 
+[10, 1]   zamiana na slocie 1 
+[8, 1]   zamiana na slocie 0 
+[3, 1]   zamiana na slocie 0 
+[3, 2]   zamiana na slocie 1 
+[3, 2]   hit
+[3, 2]   hit
+[3, 8]   zamiana na slocie 1 
+[7, 8]   zamiana na slocie 0 
+[7, 8]   hit
+[7, 8]   hit
+[4, 8]   zamiana na slocie 0 
+[7, 8]   zamiana na slocie 0 
+[7, 8]   hit
+[7, 10]   zamiana na slocie 1 
+[7, 5]   zamiana na slocie 1 
+[7, 4]   zamiana na slocie 1 
+[2, 4]   zamiana na slocie 0 
+[2, 6]   zamiana na slocie 1 
+[8, 6]   zamiana na slocie 0 
+[2, 6]   zamiana na slocie 0 
+[2, 6]   hit
+[2, 6]   hit
+[2, 9]   zamiana na slocie 1 
+[2, 3]   zamiana na slocie 1 
+[2, 7]   zamiana na slocie 1 
+[5, 7]   zamiana na slocie 0 
+[6, 7]   zamiana na slocie 0 
+[6, 4]   zamiana na slocie 1 
+[2, 4]   zamiana na slocie 0 
+[0, 4]   zamiana na slocie 0 
+[0, 4]   hit
+[2, 4]   zamiana na slocie 0 
+[0, 4]   zamiana na slocie 0 
+[7, 4]   zamiana na slocie 0 
+[7, 4]   hit
+[3, 4]   zamiana na slocie 0 
+[3, 10]   zamiana na slocie 1 
+[3, 10]   hit
+[3, 10]   hit
+[1, 10]   zamiana na slocie 0 
+[1, 5]   zamiana na slocie 1 
+[1, 8]   zamiana na slocie 1 
+[1, 0]   zamiana na slocie 1 
+[1, 0]   hit
+[8, 0]   zamiana na slocie 0 
+Faults: 37

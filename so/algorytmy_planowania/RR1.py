@@ -99,6 +99,20 @@ with open("dane.txt", "r") as input_file:
     time_quant_aging = int(input_file.readline())
     time_quantum_rr = int(input_file.readline())
 
+while(1):
+    dane = 0
+    try:
+        dane = int(input("jezeli chcesz dopisac proces do puli wpisz 1 w przeciwnym wypadku wpsiz dowolna wartosc: "))
+        if dane == 1:
+            arrival_times.append(int(input("podaj czas przybycia: ")))
+            durations.append(int(input("podaj czas trwania: ")))
+            priorities.append(int(input("podaj priorytet: ")))
+        else:
+            break
+    except ValueError:
+        print("bledne dane")
+
+
 # Run Round Robin Priority scheduling algorithm
 round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr)
 

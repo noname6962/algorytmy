@@ -15,7 +15,7 @@ def faults_opt(odniesienia, slots):
     faults = 0
     x = -1
 
-    with open("../algorytmy_planowania/raport.txt", "w") as report_file:
+    with open("raport.txt", "w") as report_file:
         report_file.write("Simulation Report - opt page replacment\n\n")
 
         for i in range(len(odniesienia)):

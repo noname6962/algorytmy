@@ -18,12 +18,12 @@ def faults_fifo(odniesienia, sloty):
                 else:
                     check[x] = odniesienia[i]
                     faults = faults + 1
-            if x < sloty-1:
+            if x < sloty - 1:
                 x = x + 1
-                report_file.write(f"{check}    zamiana na slocie {x}\n")
+                report_file.write(f"{check}    zamiana na slocie {x - 1}\n")
             else:
                 x = 0
-                report_file.write(f"{check}    zamiana na slocie 5\n")
+                report_file.write(f"{check}    zamiana na slocie {sloty - 1}\n")
 
         report_file.write(f"Faults: {faults}")
     return faults, hit

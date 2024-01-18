@@ -1,0 +1,16 @@
+porownanie wynikow dla 100 000 powtorzen
+
+
+average faults for opt 30.29769
+hit to faults ratio for opt 0.9768450994118694
+
+
+average faults for lru 41.70185
+hit to faults ratio for lru 0.4362393994511035
+
+
+average faults for fifo 41.70171
+hit to faults ratio for fifo 0.43624422116023537
+
+average faults for random replacment 41.70522
+hit to faults ratio for random replacment 0.4361233437924557

@@ -15,7 +15,7 @@ RR_wait_list, RR_turnaround_list = [], []
 for i in range(100000):
     print(i)
     generate()
-    with open("algorytmy_planowania/dane.txt", "r") as input_file:
+    with open("dane.txt", "r") as input_file:
         arrival_times = list(map(int, input_file.readline().split()))
         durations = list(map(int, input_file.readline().split()))
         priorities = list(map(int, input_file.readline().split()))
@@ -33,7 +33,7 @@ for i in range(100000):
     RR_turnaround_list.append(turnaround)
 
 
-with open("algorytmy_planowania/raport_100k.txt", "w") as report_file:
+with open("raport_100k.txt", "w") as report_file:
     report_file.write("porownanie wynikow dla 100 000 powtorzen\n\n")
     report_file.write(F"sredni czas oczekiwania FCFS {sum(FCFS_wait_list)/len(FCFS_wait_list)} \n")
     report_file.write(F"sredni czas wykonania FCFS {sum(FCFS_turnaround_list)/len(FCFS_turnaround_list)} \n")
