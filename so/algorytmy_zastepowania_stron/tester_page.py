@@ -1,7 +1,7 @@
-from so.algorytmy_zastepowania_stron.opt import faults_opt
-from lru import faults_lru
-from RandomReplacement import faults_random_replacment
-from fifo1 import faults_fifo
+from so.algorytmy_zastepowania_stron.OPT.opt import faults_opt
+from so.algorytmy_zastepowania_stron.LRU.lru import faults_lru
+from so.algorytmy_zastepowania_stron.Random_Replacment.RandomReplacement import faults_random_replacment
+from so.algorytmy_zastepowania_stron.FIFO.fifo1 import faults_fifo
 from generator_page import page_generation
 
 

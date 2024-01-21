@@ -22,7 +22,7 @@ def sjf_scheduling(arrival_times, durations):
     sorted_arrival_times = [task[0] for task in tasks]
     sorted_durations = [task[1] for task in tasks]
 
-    with open("raport.txt", "w") as report_file:
+    with open("SJF_raport.txt", "w") as report_file:
         report_file.write("Simulation Report - SJF Scheduling\n\n")
 
         while len(compleated_tasks) < len(arrival_times):
@@ -55,11 +55,11 @@ def sjf_scheduling(arrival_times, durations):
 
 if __name__ == "__main__":
     # Read input from the file
-    with open("dane.txt", "r") as input_file:
+    with open("../dane.txt", "r") as input_file:
         arrival_times = list(map(int, input_file.readline().split()))
         durations = list(map(int, input_file.readline().split()))
 
     # Run SJF scheduling algorithm
     sjf_scheduling(arrival_times, durations)
 
-    print("Simulation report generated in 'sjf_simulation_report.txt'")
+    print("Simulation report generated in 'SJF_report.txt'")

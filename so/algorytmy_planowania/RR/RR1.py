@@ -45,7 +45,7 @@ def round_robin_priority_scheduling(arrival_times, durations, priorities, time_q
     working_task = 0
     last_aging = 0
 
-    with open("raport.txt", "w") as report_file:
+    with open("RR_raport.txt", "w") as report_file:
         report_file.write("Simulation Report - Round Robin Priority Scheduling with Aging\n\n")
 
         while len(compleated_tasks) < len(arrival_times):
@@ -92,7 +92,7 @@ def round_robin_priority_scheduling(arrival_times, durations, priorities, time_q
     return average_waiting_time, average_turnaround_time
 
 
-with open("dane.txt", "r") as input_file:
+with open("../dane.txt", "r") as input_file:
     arrival_times = list(map(int, input_file.readline().split()))
     durations = list(map(int, input_file.readline().split()))
     priorities = list(map(int, input_file.readline().split()))
@@ -116,4 +116,4 @@ while(1):
 # Run Round Robin Priority scheduling algorithm
 round_robin_priority_scheduling(arrival_times, durations, priorities, time_quant_aging, time_quantum_rr)
 
-print("Simulation report generated in 'raport.txt'")
+print("Simulation report generated in 'RR_raport.txt'")

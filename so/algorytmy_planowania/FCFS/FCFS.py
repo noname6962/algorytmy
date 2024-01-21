@@ -10,7 +10,7 @@ def fcfs_scheduling(arrival_times, durations):
     total_waiting_time = 0
     total_turnaround_time = 0
 
-    with open("raport.txt", "w") as report_file:
+    with open("FCFS_raport.txt", "w") as report_file:
         report_file.write("Simulation Report - FCFS Scheduling\n\n")
 
         for i in range(len(sorted_arrival_times)):
@@ -40,11 +40,11 @@ def fcfs_scheduling(arrival_times, durations):
 
 if __name__ == "__main__":
     # Read input from the file
-    with open("dane.txt", "r") as input_file:
+    with open("../dane.txt", "r") as input_file:
         arrival_times = list(map(int, input_file.readline().split()))
         durations = list(map(int, input_file.readline().split()))
 
     # Run FCFS scheduling algorithm
     fcfs_scheduling(arrival_times, durations)
 
-    print("Simulation report generated in 'raport.txt'")
+    print("Simulation report generated in 'FCFS_raport.txt'")

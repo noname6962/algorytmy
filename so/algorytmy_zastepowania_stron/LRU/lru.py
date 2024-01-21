@@ -5,7 +5,7 @@ def faults_lru(odniesienia, sloty):
     faults = 0
     x = -1
 
-    with open("raport.txt", "w") as report_file:
+    with open("LRU_raport.txt", "w") as report_file:
         report_file.write("Simulation Report - lru page replacment\n\n")
 
         for i in range(len(odniesienia)):
@@ -40,7 +40,7 @@ def faults_lru(odniesienia, sloty):
         report_file.write(f"Faults: {faults}")
     return faults, hit
 if __name__ == '__main__':
-    with open("dane_page.txt", "r") as input_file:
+    with open("../dane_page.txt", "r") as input_file:
         odniesienia = list(map(int, input_file.readline().split()))
         slots = int(input_file.readline())
 

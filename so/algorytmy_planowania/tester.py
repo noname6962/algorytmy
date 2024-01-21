@@ -1,6 +1,6 @@
-from so.algorytmy_planowania.FCFS import fcfs_scheduling
-from so.algorytmy_planowania.sjf import sjf_scheduling
-from so.algorytmy_planowania.RR1 import round_robin_priority_scheduling
+from so.algorytmy_planowania.FCFS.FCFS import fcfs_scheduling
+from so.algorytmy_planowania.sjf.sjf import sjf_scheduling
+from so.algorytmy_planowania.RR.RR1 import round_robin_priority_scheduling
 from so.algorytmy_planowania.generator import generate
 
 wait, turnaround = 0, 0
