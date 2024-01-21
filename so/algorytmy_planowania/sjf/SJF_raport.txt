@@ -1,96 +1,96 @@
 Simulation Report - SJF Scheduling
 
-Task: Arrival Time=0, Duration=8
-Start Time: 0
-End Time: 8
+Task: Arrival Time=2, Duration=15
+Start Time: 2
+End Time: 17
 Waiting Time: 0
-Turnaround Time: 8
+Turnaround Time: 15
 
-Task: Arrival Time=10, Duration=13
-Start Time: 10
+Task: Arrival Time=8, Duration=6
+Start Time: 17
 End Time: 23
-Waiting Time: 0
-Turnaround Time: 13
+Waiting Time: 9
+Turnaround Time: 15
 
-Task: Arrival Time=10, Duration=13
+Task: Arrival Time=23, Duration=6
 Start Time: 23
+End Time: 29
+Waiting Time: 0
+Turnaround Time: 6
+
+Task: Arrival Time=27, Duration=3
+Start Time: 29
+End Time: 32
+Waiting Time: 2
+Turnaround Time: 5
+
+Task: Arrival Time=32, Duration=4
+Start Time: 32
 End Time: 36
-Waiting Time: 13
-Turnaround Time: 26
-
-Task: Arrival Time=30, Duration=2
-Start Time: 36
-End Time: 38
-Waiting Time: 6
-Turnaround Time: 8
-
-Task: Arrival Time=33, Duration=4
-Start Time: 38
-End Time: 42
-Waiting Time: 5
-Turnaround Time: 9
-
-Task: Arrival Time=27, Duration=5
-Start Time: 42
-End Time: 47
-Waiting Time: 15
-Turnaround Time: 20
-
-Task: Arrival Time=47, Duration=4
-Start Time: 47
-End Time: 51
 Waiting Time: 0
 Turnaround Time: 4
 
-Task: Arrival Time=42, Duration=7
-Start Time: 51
-End Time: 58
-Waiting Time: 9
-Turnaround Time: 16
+Task: Arrival Time=19, Duration=7
+Start Time: 36
+End Time: 43
+Waiting Time: 17
+Turnaround Time: 24
 
-Task: Arrival Time=40, Duration=9
-Start Time: 58
-End Time: 67
+Task: Arrival Time=41, Duration=6
+Start Time: 43
+End Time: 49
+Waiting Time: 2
+Turnaround Time: 8
+
+Task: Arrival Time=31, Duration=8
+Start Time: 49
+End Time: 57
 Waiting Time: 18
-Turnaround Time: 27
+Turnaround Time: 26
 
-Task: Arrival Time=25, Duration=11
-Start Time: 67
-End Time: 78
-Waiting Time: 42
+Task: Arrival Time=4, Duration=13
+Start Time: 57
+End Time: 70
+Waiting Time: 53
+Turnaround Time: 66
+
+Task: Arrival Time=36, Duration=13
+Start Time: 70
+End Time: 83
+Waiting Time: 34
+Turnaround Time: 47
+
+Task: Arrival Time=43, Duration=13
+Start Time: 83
+End Time: 96
+Waiting Time: 40
 Turnaround Time: 53
 
-Task: Arrival Time=27, Duration=11
-Start Time: 78
-End Time: 89
-Waiting Time: 51
-Turnaround Time: 62
-
-Task: Arrival Time=27, Duration=11
-Start Time: 89
-End Time: 100
-Waiting Time: 62
-Turnaround Time: 73
-
-Task: Arrival Time=30, Duration=12
-Start Time: 100
+Task: Arrival Time=42, Duration=16
+Start Time: 96
 End Time: 112
-Waiting Time: 70
-Turnaround Time: 82
+Waiting Time: 54
+Turnaround Time: 70
 
-Task: Arrival Time=36, Duration=17
+Task: Arrival Time=14, Duration=17
 Start Time: 112
 End Time: 129
-Waiting Time: 76
-Turnaround Time: 93
+Waiting Time: 98
+Turnaround Time: 115
 
-Task: Arrival Time=29, Duration=19
+Task: Arrival Time=7, Duration=18
 Start Time: 129
-End Time: 148
-Waiting Time: 100
-Turnaround Time: 119
+End Time: 147
+Waiting Time: 122
+Turnaround Time: 140
 
-Average Waiting Time: 31.13
-Average Turnaround Time: 40.87
-Turnaround Time: 148
+Task: Arrival Time=23, Duration=20
+Start Time: 147
+End Time: 167
+Waiting Time: 124
+Turnaround Time: 144
+
+Average Waiting Time: 38.20
+Average Turnaround Time: 49.20
+Turnaround Time: 167
 
