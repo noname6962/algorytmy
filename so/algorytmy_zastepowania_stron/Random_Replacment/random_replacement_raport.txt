@@ -1,0 +1,90 @@
+Simulation Report - RandomReplacment page replacment
+
+[4]   zamiana na slocie 0 
+[4, 8]   zamiana na slocie 1 
+[4, 8, 5]   zamiana na slocie 2 
+[4, 8, 5, 2]   zamiana na slocie 3 
+[4, 8, 5, 2, 0]   zamiana na slocie 4 
+[4, 8, 5, 2, 6]   zamiana na slocie 4 
+[4, 8, 5, 2, 6]   hit
+[4, 8, 5, 2, 6]   hit
+[4, 8, 5, 2, 6]   hit
+[4, 8, 5, 2, 6]   hit
+[4, 8, 3, 2, 6]   zamiana na slocie 2 
+[4, 8, 3, 5, 6]   zamiana na slocie 3 
+[4, 8, 3, 5, 6]   hit
+[4, 8, 3, 5, 6]   hit
+[4, 8, 3, 5, 6]   hit
+[4, 8, 3, 5, 1]   zamiana na slocie 4 
+[4, 8, 3, 5, 1]   hit
+[4, 8, 3, 2, 1]   zamiana na slocie 3 
+[4, 8, 0, 2, 1]   zamiana na slocie 2 
+[4, 8, 0, 7, 1]   zamiana na slocie 3 
+[4, 2, 0, 7, 1]   zamiana na slocie 1 
+[4, 2, 0, 7, 1]   hit
+[4, 2, 0, 7, 1]   hit
+[4, 2, 10, 7, 1]   zamiana na slocie 2 
+[4, 2, 10, 7, 6]   zamiana na slocie 4 
+[4, 2, 10, 7, 6]   hit
+[4, 2, 10, 7, 6]   hit
+[9, 2, 10, 7, 6]   zamiana na slocie 0 
+[9, 2, 10, 7, 4]   zamiana na slocie 4 
+[9, 2, 10, 7, 0]   zamiana na slocie 4 
+[9, 2, 10, 8, 0]   zamiana na slocie 3 
+[9, 6, 10, 8, 0]   zamiana na slocie 1 
+[9, 6, 10, 8, 0]   hit
+[9, 6, 10, 7, 0]   zamiana na slocie 3 
+[9, 6, 10, 7, 0]   hit
+[9, 6, 10, 7, 0]   hit
+[9, 6, 10, 7, 2]   zamiana na slocie 4 
+[9, 6, 10, 8, 2]   zamiana na slocie 3 
+[9, 6, 10, 8, 7]   zamiana na slocie 4 
+[9, 6, 10, 8, 7]   hit
+[9, 6, 10, 8, 7]   hit
+[9, 6, 5, 8, 7]   zamiana na slocie 2 
+[9, 6, 5, 8, 1]   zamiana na slocie 4 
+[9, 6, 5, 8, 0]   zamiana na slocie 4 
+[9, 6, 5, 8, 0]   hit
+[9, 6, 5, 8, 0]   hit
+[9, 6, 5, 8, 3]   zamiana na slocie 4 
+[9, 6, 5, 7, 3]   zamiana na slocie 3 
+[9, 6, 5, 10, 3]   zamiana na slocie 3 
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 10, 3]   hit
+[9, 6, 5, 7, 3]   zamiana na slocie 3 
+[9, 6, 5, 7, 0]   zamiana na slocie 4 
+[9, 6, 10, 7, 0]   zamiana na slocie 2 
+[9, 6, 10, 7, 0]   hit
+[9, 6, 10, 7, 0]   hit
+[9, 6, 10, 7, 0]   hit
+[9, 8, 10, 7, 0]   zamiana na slocie 1 
+[9, 8, 10, 7, 5]   zamiana na slocie 4 
+[2, 8, 10, 7, 5]   zamiana na slocie 0 
+[2, 8, 10, 9, 5]   zamiana na slocie 3 
+[2, 8, 10, 9, 5]   hit
+[2, 8, 10, 9, 1]   zamiana na slocie 4 
+[2, 8, 10, 6, 1]   zamiana na slocie 3 
+[2, 8, 10, 6, 5]   zamiana na slocie 4 
+[4, 8, 10, 6, 5]   zamiana na slocie 0 
+[4, 8, 10, 6, 2]   zamiana na slocie 4 
+[4, 8, 10, 5, 2]   zamiana na slocie 3 
+[4, 8, 10, 5, 6]   zamiana na slocie 4 
+[4, 7, 10, 5, 6]   zamiana na slocie 1 
+[4, 7, 10, 5, 6]   hit
+[4, 7, 10, 0, 6]   zamiana na slocie 3 
+[4, 7, 10, 0, 6]   hit
+[4, 7, 10, 0, 6]   hit
+[4, 9, 10, 0, 6]   zamiana na slocie 1 
+[4, 9, 1, 0, 6]   zamiana na slocie 2 
+[4, 9, 1, 0, 5]   zamiana na slocie 4 
+[4, 9, 1, 0, 5]   hit
+[2, 9, 1, 0, 5]   zamiana na slocie 0 
+[2, 9, 1, 4, 5]   zamiana na slocie 3 
+[2, 9, 1, 4, 5]   hit
+[2, 9, 1, 4, 5]   hit
+Faults: 51

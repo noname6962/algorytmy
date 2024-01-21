@@ -1,0 +1,96 @@
+Simulation Report - FCFS Scheduling
+
+Task: Arrival Time=0, Duration=3
+Start Time: 0
+End Time: 3
+Waiting Time: 0
+Turnaround Time: 3
+
+Task: Arrival Time=6, Duration=4
+Start Time: 6
+End Time: 10
+Waiting Time: 0
+Turnaround Time: 4
+
+Task: Arrival Time=7, Duration=10
+Start Time: 10
+End Time: 20
+Waiting Time: 3
+Turnaround Time: 13
+
+Task: Arrival Time=10, Duration=14
+Start Time: 20
+End Time: 34
+Waiting Time: 10
+Turnaround Time: 24
+
+Task: Arrival Time=14, Duration=15
+Start Time: 34
+End Time: 49
+Waiting Time: 20
+Turnaround Time: 35
+
+Task: Arrival Time=15, Duration=5
+Start Time: 49
+End Time: 54
+Waiting Time: 34
+Turnaround Time: 39
+
+Task: Arrival Time=25, Duration=1
+Start Time: 54
+End Time: 55
+Waiting Time: 29
+Turnaround Time: 30
+
+Task: Arrival Time=27, Duration=5
+Start Time: 55
+End Time: 60
+Waiting Time: 28
+Turnaround Time: 33
+
+Task: Arrival Time=30, Duration=2
+Start Time: 60
+End Time: 62
+Waiting Time: 30
+Turnaround Time: 32
+
+Task: Arrival Time=30, Duration=11
+Start Time: 62
+End Time: 73
+Waiting Time: 32
+Turnaround Time: 43
+
+Task: Arrival Time=32, Duration=15
+Start Time: 73
+End Time: 88
+Waiting Time: 41
+Turnaround Time: 56
+
+Task: Arrival Time=33, Duration=9
+Start Time: 88
+End Time: 97
+Waiting Time: 55
+Turnaround Time: 64
+
+Task: Arrival Time=33, Duration=8
+Start Time: 97
+End Time: 105
+Waiting Time: 64
+Turnaround Time: 72
+
+Task: Arrival Time=37, Duration=16
+Start Time: 105
+End Time: 121
+Waiting Time: 68
+Turnaround Time: 84
+
+Task: Arrival Time=47, Duration=11
+Start Time: 121
+End Time: 132
+Waiting Time: 74
+Turnaround Time: 85
+
+Average Waiting Time: 32.53
+Average Turnaround Time: 41.13
+Turnaround Time: 132
+

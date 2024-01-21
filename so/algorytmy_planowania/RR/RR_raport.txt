@@ -1,0 +1,274 @@
+Simulation Report - Round Robin Priority Scheduling with Aging
+
+Task 0:
+priority 9:
+Start Time: 2
+End Time: 6
+
+Task 0:
+priority 8:
+Start Time: 6
+End Time: 10
+
+Task 1:
+priority 4:
+Start Time: 10
+End Time: 14
+
+Task compleated 
+Task 2:
+priority 2:
+Start Time: 14
+End Time: 15
+Waiting Time: 6
+Turnaround Time: 7
+
+Task 0:
+priority 5:
+Start Time: 15
+End Time: 19
+
+Task 1:
+priority 1:
+Start Time: 19
+End Time: 23
+
+Task compleated 
+Task 3:
+priority -1:
+Start Time: 23
+End Time: 24
+Waiting Time: 5
+Turnaround Time: 6
+
+Task 0:
+priority 2:
+Start Time: 24
+End Time: 28
+
+Task 1:
+priority -2:
+Start Time: 28
+End Time: 32
+
+Task compleated 
+Task 0:
+priority 0:
+Start Time: 32
+End Time: 34
+Waiting Time: 14
+Turnaround Time: 32
+
+Task compleated 
+Task 1:
+priority -4:
+Start Time: 34
+End Time: 35
+Waiting Time: 19
+Turnaround Time: 32
+
+Task compleated 
+Task 7:
+priority -2:
+Start Time: 35
+End Time: 38
+Waiting Time: 3
+Turnaround Time: 6
+
+Task 8:
+priority -3:
+Start Time: 38
+End Time: 42
+
+Task 8:
+priority -4:
+Start Time: 42
+End Time: 46
+
+Task 8:
+priority -5:
+Start Time: 46
+End Time: 50
+
+Task 8:
+priority -6:
+Start Time: 50
+End Time: 54
+
+Task compleated 
+Task 8:
+priority -7:
+Start Time: 54
+End Time: 58
+Waiting Time: 6
+Turnaround Time: 26
+
+Task 6:
+priority -5:
+Start Time: 58
+End Time: 62
+
+Task compleated 
+Task 11:
+priority -6:
+Start Time: 62
+End Time: 66
+Waiting Time: 26
+Turnaround Time: 30
+
+Task 6:
+priority -7:
+Start Time: 66
+End Time: 70
+
+Task 6:
+priority -8:
+Start Time: 70
+End Time: 74
+
+Task compleated 
+Task 6:
+priority -9:
+Start Time: 74
+End Time: 77
+Waiting Time: 35
+Turnaround Time: 50
+
+Task 4:
+priority -9:
+Start Time: 77
+End Time: 81
+
+Task 4:
+priority -10:
+Start Time: 81
+End Time: 85
+
+Task 4:
+priority -11:
+Start Time: 85
+End Time: 89
+
+Task compleated 
+Task 4:
+priority -12:
+Start Time: 89
+End Time: 91
+Waiting Time: 53
+Turnaround Time: 67
+
+Task compleated 
+Task 5:
+priority -12:
+Start Time: 91
+End Time: 94
+Waiting Time: 66
+Turnaround Time: 69
+
+Task 12:
+priority -12:
+Start Time: 94
+End Time: 98
+
+Task 12:
+priority -13:
+Start Time: 98
+End Time: 102
+
+Task compleated 
+Task 12:
+priority -14:
+Start Time: 102
+End Time: 105
+Waiting Time: 54
+Turnaround Time: 65
+
+Task 13:
+priority -14:
+Start Time: 105
+End Time: 109
+
+Task 13:
+priority -15:
+Start Time: 109
+End Time: 113
+
+Task compleated 
+Task 13:
+priority -16:
+Start Time: 113
+End Time: 116
+Waiting Time: 64
+Turnaround Time: 75
+
+Task 9:
+priority -16:
+Start Time: 116
+End Time: 120
+
+Task 10:
+priority -17:
+Start Time: 120
+End Time: 124
+
+Task 9:
+priority -18:
+Start Time: 124
+End Time: 128
+
+Task 10:
+priority -19:
+Start Time: 128
+End Time: 132
+
+Task 9:
+priority -20:
+Start Time: 132
+End Time: 136
+
+Task compleated 
+Task 10:
+priority -21:
+Start Time: 136
+End Time: 140
+Waiting Time: 92
+Turnaround Time: 104
+
+Task 9:
+priority -22:
+Start Time: 140
+End Time: 144
+
+Task compleated 
+Task 9:
+priority -23:
+Start Time: 144
+End Time: 148
+Waiting Time: 94
+Turnaround Time: 114
+
+Task 14:
+priority -21:
+Start Time: 148
+End Time: 152
+
+Task 14:
+priority -22:
+Start Time: 152
+End Time: 156
+
+Task 14:
+priority -23:
+Start Time: 156
+End Time: 160
+
+Task compleated 
+Task 14:
+priority -24:
+Start Time: 160
+End Time: 161
+Waiting Time: 107
+Turnaround Time: 120
+
+Average Waiting Time: 42.93
+Average Turnaround Time: 53.53

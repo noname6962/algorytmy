@@ -1,0 +1,52 @@
+Simulation Report - opt page replacment
+
+[8]   zamiana na slocie 0
+[8, 5]   zamiana na slocie 1
+[8, 4]   zamiana na slocie 1
+[8, 10]   zamiana na slocie 1
+[8, 1]   zamiana na slocie 1
+[8, 1]   hit
+[8, 3]   zamiana na slocie 0
+[2, 3]   zamiana na slocie 1
+[2, 3]   hit
+[2, 3]   hit
+[2, 8]   zamiana na slocie 0
+[7, 8]   zamiana na slocie 0
+[7, 8]   hit
+[7, 8]   hit
+[7, 4]   zamiana na slocie 1
+[7, 4]   hit
+[7, 4]   hit
+[10, 4]   zamiana na slocie 0
+[5, 4]   zamiana na slocie 0
+[5, 4]   hit
+[5, 2]   zamiana na slocie 0
+[6, 2]   zamiana na slocie 0
+[8, 2]   zamiana na slocie 0
+[8, 2]   hit
+[6, 2]   zamiana na slocie 1
+[6, 2]   hit
+[6, 9]   zamiana na slocie 1
+[6, 3]   zamiana na slocie 1
+[6, 7]   zamiana na slocie 1
+[6, 5]   zamiana na slocie 1
+[6, 5]   hit
+[4, 5]   zamiana na slocie 1
+[4, 2]   zamiana na slocie 0
+[0, 2]   zamiana na slocie 1
+[0, 2]   hit
+[0, 2]   hit
+[0, 2]   hit
+[0, 7]   zamiana na slocie 1
+[0, 4]   zamiana na slocie 1
+[0, 3]   zamiana na slocie 1
+[0, 10]   zamiana na slocie 0
+[0, 10]   hit
+[0, 10]   hit
+[0, 1]   zamiana na slocie 1
+[0, 5]   zamiana na slocie 1
+[0, 8]   zamiana na slocie 1
+[0, 8]   hit
+[0, 8]   hit
+[0, 8]   hit
+Faults: 30
